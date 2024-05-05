@@ -7,28 +7,33 @@ import Card from '../components/Card.astro';
 <!-- <Layout title="Recolectame - Recolectamos, reciclamos, renovamos: ¡por un mundo mejor!"> -->
 <Layout title="Recolectame: Expertos en recolección de basura y gestión de residuos">
 	<main class="">
-    <section class="w-100 min-h-screen bg bg-silver pt-16 pb-12 px-8 flex justify-center items-center">
-      <div class="container mx-auto flex flex-col justify-start gap-8">
-        <img src="recolectame_logo.png" class="w-16" alt="">
-        <h1 class="font-serif text-3xl font-bold text-neutral-d-grey">
-          Recolectamos, reciclamos, renovamos: ¡por un mundo mejor!
-        </h1>
-        <p>
-          Bienvenido a Recolectame, 
-          <span class="font-bold text-green">tu socio en la gestión responsable de residuos</span>. 
-          Ayudamos a empresas a manejar sus desechos de manera eficiente y sostenible. 
-        </p>
-        <p>Únete a nosotros para un futuro más limpio.</p>
-        <Button href="https://wa.me/5215615414968">
-          Contáctanos
-        </Button>
-        <img src="/hero.svg" alt="" class="w-full hidden">
+    <header class="w-100 min-h-screen bg bg-silver pt-16 pb-12 px-8 flex justify-center items-center">
+      <div class="container mx-auto flex flex-col justify-start gap-8 md:flex-row">
+        <div class="flex flex-col gap-8 flex-auto">
+          <img src="recolectame_logo.png" class="w-16" alt="">
+          <h1 class="font-serif text-3xl font-bold text-neutral-d-grey">
+            Recolectamos, reciclamos, renovamos: ¡por un mundo mejor!
+          </h1>
+          <p>
+            Bienvenido a Recolectame, 
+            <span class="font-bold text-green">tu socio en la gestión responsable de residuos</span>. 
+            Ayudamos a empresas a manejar sus desechos de manera eficiente y sostenible. 
+          </p>
+          <p>Únete a nosotros para un futuro más limpio.</p>
+          <Button href="https://wa.me/5215615414968">
+            Contáctanos
+          </Button>
+        </div>
+        <div class="hidden md:inline-block">
+          <img src="/hero.svg" alt="" class="w-full">
+        </div>
+        
       </div>
-    </section>
+    </header>
     <section class="bg-white">
       <div class="container mx-auto flex flex-col items-center justify-center gap-4 px-8 py-12 box-border">
         <h2 class="uppercase text-xl font-bold font-serif text-neutral-d-grey">Nuestros servicios:</h2>
-        <ul class="flex flex-col gap-16">
+        <ul class="flex flex-col gap-16 lg:flex-row">
           <Card
             title="Recolección de Residuos Industriales" 
             description="Nos especializamos en la recolección segura y eficiente de residuos industriales, ayudando a empresas a gestionar sus desechos de manera responsable y cumpliendo con las regulaciones ambientales.">
@@ -62,7 +67,7 @@ import Card from '../components/Card.astro';
               <label for="mensaje" class="block text-gray-700">Mensaje:</label>
               <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" class="form-textarea mt-1 w-full"></textarea>
             </div>
-            <button type="submit" class="bg-green text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Enviar mensaje</button>
+            <button type="submit" class="bg-action-success text-white font-bold py-2 px-4 rounded hover:bg-blue-600">Enviar mensaje</button>
           </form>
         </div>
         
