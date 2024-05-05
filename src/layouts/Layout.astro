@@ -14,38 +14,26 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+    <meta name="description" content="En Recolectame nos especializamos en la recolección y gestión responsable de residuos industriales y comerciales. Con nuestra experiencia y compromiso ambiental, ayudamos a empresas textiles, fábricas de ropa, industrias tecnológicas y clubes campestres a manejar sus desechos de manera eficiente y sostenible.">
+    <meta name="keywords" content="recolección de basura, gestión de residuos, empresa de recolección de basura, recolección de residuos industriales, recolección de residuos comerciales, manejo de desechos, responsabilidad ambiental, sostenibilidad, industria textil, fábricas de ropa, tecnología, clubes campestres">
+    <meta name="author" content="Recolectame">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="pt-16">
+    <nav class="w-full h-16 bg-white fixed p-2 box-border flex justify-between items-center top-0 z-50">
+      <div class="flex gap-2 justify-center items-center">
+        <img src="/recolectame_logo.png" alt="Recolectame logo" class="h-10">
+        <img src="/recolectame.png" alt="Recolectame logo" class="h-10">
+      </div>
+      <ul>
+        <li></li>
+      </ul>
+    </nav>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+
