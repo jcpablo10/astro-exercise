@@ -1,18 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
 import Card from '../components/Card.astro';
 ---
 
 <!-- <Layout title="Recolectame - Recolectamos, reciclamos, renovamos: ¡por un mundo mejor!"> -->
 <Layout title="Recolectame: Expertos en recolección de basura y gestión de residuos">
 	<main class="">
-    <div class="w-100 h-screen bg bg-[#F5F7FA]">
+    <section class="w-100 h-screen bg bg-silver">
       <div class="container mx-auto p-4 flex flex-col justify-start gap-8">
         <img src="recolectame_logo.png" class="w-16" alt="">
-        <h1 class="font-serif text-3xl font-bold">Recolectamos, reciclamos, renovamos: ¡por un mundo mejor!</h1>
-        <p>Bienvenido a Recolectame, <span class="font-bold text-green">tu socio en la gestión responsable de residuos</span>. Ayudamos a empresas a manejar sus desechos de manera eficiente y sostenible. Únete a nosotros para un futuro más limpio."</p>
+        <h1 class="font-serif text-3xl font-bold">
+          Recolectamos, reciclamos, renovamos: ¡por un mundo mejor!
+        </h1>
+        <p>
+          Bienvenido a Recolectame, 
+          <span class="font-bold text-green">tu socio en la gestión responsable de residuos</span>. 
+          Ayudamos a empresas a manejar sus desechos de manera eficiente y sostenible. Únete a nosotros para un futuro más limpio."
+        </p>
+        <Button href="https://wa.me/5215615414968">
+          Contáctanos
+        </Button>
       </div>
-    </div>
+    </section>
+    <section class="bg-white">
+      <div class="container mx-auto flex flex-col items-center justify-center gap-4 p-8 box-border">
+        <h2 class="uppercase text-xl font-semibold">Nuestros servicios:</h2>
+        <ul class="flex flex-col gap-8">
+          <Card
+            title="Recolección de Residuos Industriales" 
+            description="Nos especializamos en la recolección segura y eficiente de residuos industriales, ayudando a empresas a gestionar sus desechos de manera responsable y cumpliendo con las regulaciones ambientales.">
+          </Card>
+          <Card
+            title="Gestión de Residuos Comerciales:"
+            description="Ofrecemos soluciones integrales para la gestión de residuos comerciales, ayudando a reducir el impacto ambiental y los costos operativos de nuestros clientes a través de prácticas sostenibles de recolección y reciclaje.">
+          </Card>
+          <Card
+            title="Asesoramiento en Sostenibilidad Ambiental:"
+            description="Nuestro equipo de expertos ofrece asesoramiento personalizado en sostenibilidad ambiental, ayudando a empresas a implementar prácticas de gestión de residuos más eficientes y a adoptar medidas para reducir su huella ecológica.">
+          </Card>
+        </ul>
+      </div>
+    </section>
 	</main>
 </Layout>
 

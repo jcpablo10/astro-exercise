@@ -6,10 +6,12 @@ module.exports = {
       'sans': 'Open Sans',
       'serif': "Montserrat",
     },
-    colors: {
-      green: "#28CB8B",
+    extend: {
+      colors: {
+        green: "#28CB8B",
+        silver: "#F5F7FA",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
